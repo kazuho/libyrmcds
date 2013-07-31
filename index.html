@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>libyrmcds</title>
+  <meta name="description" content="A memcached client library for C/C++.  Best suited to yrmcds.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">libyrmcds</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">A memcached client library for C/C++.  Best suited to yrmcds.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/cybozu/libyrmcds/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/cybozu/libyrmcds/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/cybozu/libyrmcds" class="code">View libyrmcds on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="libyrmcds" class="anchor" href="#libyrmcds"><span class="octicon octicon-link"></span></a>libyrmcds</h1>
+
+<p>libyrmcds is a <a href="http://memcached.org/">memcached</a> client library written in C.<br>
+This is a companion to <a href="http://cybozu.github.io/yrmcds/">yrmcds</a>, a memcached compatible KVS.</p>
+
+<p>In addition to the library itself, a client program called <code>yc</code> is included.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>
+<p>Minimalistic.</p>
+
+<p>libyrmcds does <em>not</em> provide any rich features like consistent hashing.
+Instead, it can be used as a base library to implement such rich
+features.</p>
+</li>
+<li>
+<p>Only the binary protocol is supported.</p>
+
+<p>By supporting only the latest <a href="https://code.google.com/p/memcached/wiki/BinaryProtocolRevamped">binary protocol</a>, libyrmcds
+provides full access to the every aspect of the protocol.</p>
+</li>
+<li>
+<p>Support for <a href="http://cybozu.github.io/yrmcds/">yrmcds</a> extensions.</p>
+
+<p>Specifically, <a href="https://github.com/cybozu/yrmcds/blob/master/docs/locking.md">the server-side locking</a> is supported.</p>
+</li>
+<li>
+<p>Separated send / recv operations.</p>
+
+<p>Although the socket used in libyrmcds is blocking, receiving results
+from the server is separated from the sending operations.  You can
+even use a different thread to receive results asynchronously.</p>
+</li>
+<li>
+<p>Optional compression with <a href="https://code.google.com/p/lz4/">LZ4</a>.</p>
+
+<p>Large objects can be transparently compressed/uncompressed with
+<a href="https://code.google.com/p/lz4/">LZ4</a> compression algorithm.</p>
+</li>
+</ul><h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>A <a href="https://github.com/cybozu/libyrmcds/blob/master/USAGE.md">usage guide</a> and
+<a href="html/">API documents</a> are available.</p>
+
+<h2>
+<a name="authors--license" class="anchor" href="#authors--license"><span class="octicon octicon-link"></span></a>Authors &amp; License</h2>
+
+<p>The primary author is <a href="https://github.com/ymmt2005" class="user-mention">@ymmt2005</a> (<a href="https://twitter.com/ymmt2005">twitter</a>) at <a href="http://www.cybozu.com/us/">Cybozu</a>.</p>
+
+<p>This software is licensed under <a href="http://opensource.org/licenses/BSD-2-Clause">the BSD 2-clause license</a>.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/cybozu" class="avatar"><img src="https://secure.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/cybozu">cybozu</a> maintains <a href="https://github.com/cybozu/libyrmcds">libyrmcds</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/cybozu/libyrmcds/tarball/master" class="tar">tar</a><a href="https://github.com/cybozu/libyrmcds/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42201828-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
